@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitTesting_FirstTask
 {
-    class WorkArray
+    public class WorkArray
     {
         public static double[] FormingArray(string str)
         {
@@ -14,7 +14,7 @@ namespace UnitTesting_FirstTask
             double[] arr = new double[parsedString.Length];
             for(int i = 0; i < arr.Length; ++i)
             {
-                arr[i] = double.Parse(parsedString[i]);
+                arr[i] = double.Parse(parsedString[i], System.Globalization.CultureInfo.GetCultureInfo("en-US"));
             }
             return arr;
         }
@@ -25,7 +25,7 @@ namespace UnitTesting_FirstTask
             List<double> newArr = new List<double>();
             for (int i = 0; i < length; ++i)
             {
-                if(i % element != 0)
+                if((i + 1) % element != 0)
                 {
                     newArr.Add(arr[i]);
                 }
