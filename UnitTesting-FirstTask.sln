@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeletingEachSecondElement", "UnitTesting-FirstTask\DeletingEachSecondElement.csproj", "{C20508D7-1ABF-4629-AB6C-118353F92E07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayClassLibraryTests", "ArrayTests\ArrayClassLibraryTests.csproj", "{DF17B910-2693-4DCB-9CE7-1DEC3930C116}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C20508D7-1ABF-4629-AB6C-118353F92E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C20508D7-1ABF-4629-AB6C-118353F92E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C20508D7-1ABF-4629-AB6C-118353F92E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
