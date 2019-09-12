@@ -61,5 +61,15 @@ namespace ArrayClassLibraryTests
             double[] result = equation.SolveEquation();
             CollectionAssert.AreEqual(expected, result);*/
         }
+
+        [TestMethod]
+        public void ChessTest()
+        {
+            int[,] queens = new int[,] { { 2, 1 }, { 3, 3 } };
+            bool expected = false;
+            Chess chess = new Chess(queens);
+            bool result = chess.CheckBeat();
+            Assert.AreEqual(expected, result);
+        }
     }
 }
