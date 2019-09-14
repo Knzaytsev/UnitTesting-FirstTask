@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C20508D7-1ABF-4629-AB6C-118353F92E07}</ProjectGuid>
+    <ProjectGuid>{6884B947-473F-41A1-BED5-323FDF51C59D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UnitTesting_FirstTask</RootNamespace>
-    <AssemblyName>UnitTesting-FirstTask</AssemblyName>
+    <RootNamespace>Chess</RootNamespace>
+    <AssemblyName>Chess</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,10 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chess.cs" />
-    <Compile Include="MathEquation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

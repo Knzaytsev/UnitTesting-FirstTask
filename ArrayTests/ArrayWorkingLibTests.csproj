@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayTests.cs" />
+    <Compile Include="WorkArrayTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UnitTesting-FirstTask\DeletingEachSecondElement.csproj">
+    <ProjectReference Include="..\UnitTesting-FirstTask\ArrayWorking.csproj">
       <Project>{c20508d7-1abf-4629-ab6c-118353f92e07}</Project>
-      <Name>DeletingEachSecondElement</Name>
+      <Name>ArrayWorking</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

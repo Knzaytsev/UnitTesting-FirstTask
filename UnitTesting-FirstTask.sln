@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeletingEachSecondElement", "UnitTesting-FirstTask\DeletingEachSecondElement.csproj", "{C20508D7-1ABF-4629-AB6C-118353F92E07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayWorking", "UnitTesting-FirstTask\ArrayWorking.csproj", "{C20508D7-1ABF-4629-AB6C-118353F92E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayClassLibraryTests", "ArrayTests\ArrayClassLibraryTests.csproj", "{DF17B910-2693-4DCB-9CE7-1DEC3930C116}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayWorkingLibTests", "ArrayTests\ArrayWorkingLibTests.csproj", "{DF17B910-2693-4DCB-9CE7-1DEC3930C116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equation", "Equation\Equation.csproj", "{9B804BC5-E20D-4CA3-B4E3-BE9C87E21EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquationLibTests", "EquationLibTests\EquationLibTests.csproj", "{00DE73A0-2E1E-440F-92BF-28964C3CF5AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chess", "Chess\Chess.csproj", "{6884B947-473F-41A1-BED5-323FDF51C59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessLibTests", "ChessLibTests\ChessLibTests.csproj", "{3EC02875-6977-4623-B310-F0B12FDBE71E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF17B910-2693-4DCB-9CE7-1DEC3930C116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B804BC5-E20D-4CA3-B4E3-BE9C87E21EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B804BC5-E20D-4CA3-B4E3-BE9C87E21EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B804BC5-E20D-4CA3-B4E3-BE9C87E21EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B804BC5-E20D-4CA3-B4E3-BE9C87E21EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DE73A0-2E1E-440F-92BF-28964C3CF5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DE73A0-2E1E-440F-92BF-28964C3CF5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DE73A0-2E1E-440F-92BF-28964C3CF5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DE73A0-2E1E-440F-92BF-28964C3CF5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6884B947-473F-41A1-BED5-323FDF51C59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6884B947-473F-41A1-BED5-323FDF51C59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6884B947-473F-41A1-BED5-323FDF51C59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6884B947-473F-41A1-BED5-323FDF51C59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC02875-6977-4623-B310-F0B12FDBE71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC02875-6977-4623-B310-F0B12FDBE71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC02875-6977-4623-B310-F0B12FDBE71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC02875-6977-4623-B310-F0B12FDBE71E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
