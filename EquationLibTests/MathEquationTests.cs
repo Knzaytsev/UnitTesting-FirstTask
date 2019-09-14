@@ -68,7 +68,7 @@ namespace EquationLibTests
         }
 
         [TestMethod]
-        public void b_is_zero()
+        public void b_is_zero_and_there_are_roots()
         {
             //arrange
             double a = 7, b = 0, c = -7;
@@ -97,6 +97,64 @@ namespace EquationLibTests
             CollectionAssert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void a_and_b_are_zero_c_is_not_zero()
+        {
+            //arrange
+            double a = 0, b = 0, c = 9;
+            double[] expected = new double[] { };
 
+            //act
+            MathEquation equation = new MathEquation(a, b, c);
+            double[] actual = equation.SolveEquation();
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void a_and_c_are_zero_b_is_not_zero()
+        {
+            //arrange
+            double a = 0, b = 8, c = 0;
+            double[] expected = new double[] { 0 };
+
+            //act
+            MathEquation equation = new MathEquation(a, b, c);
+            double[] actual = equation.SolveEquation();
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void b_and_c_are_zero_a_is_not_zero()
+        {
+            //arrange
+            double a = 1.056, b = 0, c = 0;
+            double[] expected = new double[] { 0 };
+
+            //act
+            MathEquation equation = new MathEquation(a, b, c);
+            double[] actual = equation.SolveEquation();
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void all_not_zero_and_there_are_no_roots()
+        {
+            //arrange
+            double a = 6, b = 0.1, c = 53;
+            double[] expected = new double[] { };
+
+            //act
+            MathEquation equation = new MathEquation(a, b, c);
+            double[] actual = equation.SolveEquation();
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }
