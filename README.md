@@ -10,6 +10,7 @@
 Оцените свои трудозатраты (сколько потратили минут, часов). Добавьте файлик с этой информации рядом с проектом.
 
 Доп. материал:
+
 https://msdn.microsoft.com/ru-ru/library/ms229002(v=vs.100).aspx
 
 https://docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
