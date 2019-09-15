@@ -12,8 +12,8 @@ namespace UnitTesting_FirstTask
         public double[] FormingArray(string str)
         {
             string[] parsedString = str.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            double[] arr = new double[parsedString.Length];
-            for (int i = 0; i < arr.Length; ++i)
+            var arr = new double[parsedString.Length];
+            for (var i = 0; i < arr.Length; ++i)
             {
                 try
                 {
@@ -32,8 +32,8 @@ namespace UnitTesting_FirstTask
             if (element <= 0)
                 throw new MinusElementException();
             int length = arr.Length;
-            List<double> newArr = new List<double>();
-            for (int i = 0; i < length; ++i)
+            var newArr = new List<double>();
+            for (var i = 0; i < length; ++i)
             {
                 if((i + 1) % element != 0)
                 {

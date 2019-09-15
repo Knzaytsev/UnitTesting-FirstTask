@@ -8,10 +8,10 @@ namespace ChessLibTests
     public class ChessTests
     {
         [TestMethod]
-        public void equal_x()
+        public void CheckBeat_SameHorizontalBetweenTwoQueens_ReturnsTrue()
         {
             //arrange
-            int[,] queens = new int[,] { { 3, 5 }, { 3, 8 } };
+            int[,] queens = { { 3, 5 }, { 3, 8 } };
             bool expected = true;
 
             //act
@@ -23,10 +23,10 @@ namespace ChessLibTests
         }
 
         [TestMethod]
-        public void equal_y()
+        public void CheckBeat_SameVerticalBetweenFirstAndThirdQueens_ReturnsTrue()
         {
             //arrange
-            int[,] queens = new int[,] { { 3, 5 }, { 1, 8 }, { 8, 5 } };
+            int[,] queens = { { 3, 5 }, { 1, 8 }, { 8, 5 } };
             bool expected = true;
 
             //act
@@ -38,10 +38,10 @@ namespace ChessLibTests
         }
 
         [TestMethod]
-        public void equal_diag()
+        public void CheckBeat_SameDiagonalBetweenTwoQueens_ReturnsTrue()
         {
             //arrange
-            int[,] queens = new int[,] { { 3, 2 }, { 8, 7 } };
+            int[,] queens = { { 3, 2 }, { 8, 7 } };
             bool expected = true;
 
             //act
@@ -53,10 +53,10 @@ namespace ChessLibTests
         }
 
         [TestMethod]
-        public void not_beat()
+        public void CheckBeat_AllQueensDontIntersect_ReturnsFalse()
         {
             //arrange
-            int[,] queens = new int[,] { { 1, 4 }, { 2, 6 }, { 3, 8 }, { 4, 5 }, { 5, 7 }, { 6, 1 }, { 7, 3 } };
+            int[,] queens = { { 1, 4 }, { 2, 6 }, { 3, 8 }, { 4, 5 }, { 5, 7 }, { 6, 1 }, { 7, 3 } };
             bool expected = false;
 
             //act
@@ -69,10 +69,10 @@ namespace ChessLibTests
 
         [TestMethod]
         [ExpectedException(typeof(SameElementException))]
-        public void equal_location_two_queens()
+        public void CheckBeat_SameLocationBetweenTwoQueens_ThrowsSameElementException()
         {
             //arrange
-            int[,] queens = new int[,] { { 1, 4 }, { 1, 8 },  { 1, 4 } };
+            int[,] queens = { { 1, 4 }, { 1, 8 },  { 1, 4 } };
 
             //act
             UnitTesting_FirstTask.Chess chess = new UnitTesting_FirstTask.Chess(queens);
@@ -82,10 +82,10 @@ namespace ChessLibTests
         }
 
         [TestMethod]
-        public void beat_in_the_end()
+        public void CheckBeat_FirstQueenIntersectsSecondInTheEnd_ReturnsTrue()
         {
             //arrange
-            int[,] queens = new int[,] { { 1, 4 }, { 2, 6 }, { 3, 8 }, { 4, 5 }, { 5, 7 }, { 6, 1 }, { 8, 4 } };
+            int[,] queens = { { 1, 4 }, { 2, 6 }, { 3, 8 }, { 4, 5 }, { 5, 7 }, { 6, 1 }, { 8, 4 } };
             bool expected = true;
 
             //act
@@ -97,10 +97,10 @@ namespace ChessLibTests
         }
 
         [TestMethod]
-        public void all_beat()
+        public void CheckBeat_AllQueensIntersect_ReturnsTrue()
         {
             //arrange
-            int[,] queens = new int[,] { { 6, 7 }, { 7, 8 }, { 6, 1 }, { 2, 8 } };
+            int[,] queens = { { 6, 7 }, { 7, 8 }, { 6, 1 }, { 2, 8 } };
             bool expected = true;
 
             //act

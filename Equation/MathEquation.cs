@@ -31,7 +31,7 @@ namespace UnitTesting_FirstTask
 
         private double[] SolveEquationDiscriminant()
         {
-            List<double> result = new List<double>();
+            var result = new List<double>();
             double d = b * b - 4 * a * c;
             double x1 = 0;
             double x2 = 0;
