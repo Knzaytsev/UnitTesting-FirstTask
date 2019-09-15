@@ -46,6 +46,7 @@
     <Compile Include="Chess.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SameElementException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
