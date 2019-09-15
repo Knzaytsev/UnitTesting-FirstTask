@@ -1,6 +1,6 @@
 # Первое задание по модульному тестированию (Unit-testing)
 
-"Реализовать/создать следующие функции:
+Реализовать/создать следующие функции:
 1. Функция удаляет из списка каждый второй элемент (на вход элементы массива перечисленные через запятую в строке, к примеру, ""1.2, 2, 3.5"").
 2. Найти корни квадратного уравнения, заданного своими коэффициентами. Предусмотреть все возможные случаи (два действительных корня, один корень, нет корней). На вход коэф. a,b,c (тип double).
 3. Положения ферзей на шахматной доске заданы списком пар (горизонталь, вертикаль). Определить, имеется ли пара ферзей, бьющих друг друга.
@@ -11,5 +11,7 @@
 
 Доп. материал:
 https://msdn.microsoft.com/ru-ru/library/ms229002(v=vs.100).aspx
+
 https://docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
-https://docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments"
+
+https://docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
